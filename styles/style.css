@@ -20,7 +20,9 @@ nav {
   font-weight: bold;
   align-items: center;
 }
-
+section {
+  margin-top: 50px;
+}
 .my-btn {
   background-color: transparent;
   justify-content: center;
@@ -73,3 +75,4 @@ nav {
   opacity: 1;
   transition: 1px 0.5s ease;
 }
+
