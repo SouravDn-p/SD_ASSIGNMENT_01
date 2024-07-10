@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -12,7 +12,7 @@ body {
 
 nav {
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0px 130px;
@@ -92,14 +92,17 @@ main {
 
 .web-container {
   background-color: rgba(13, 19, 33, 0.02);
-  width: 90%;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 16px;
 }
-.motive-header{
+.motive-container {
+  padding: 80px 97px 0px 97px;
+}
+.motive-header {
   padding: 10px 30px;
   margin-bottom: 48px;
 }
@@ -161,7 +164,10 @@ main {
 .my-inspiration {
   background-color: white;
 }
-
+.my-inspiration .motive-header {
+  padding: 0 140px;
+  line-height: 26px;
+}
 .video-container {
   position: static;
   width: 100%;
@@ -183,6 +189,9 @@ main {
 }
 
 /* the current targer section */
+.current-target {
+  background-color: white;
+}
 .target-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -231,12 +240,15 @@ main {
 /* my support section   */
 
 .my-support {
+  margin-top: 100px;
   height: 314px;
+  background-color: rgba(0, 0, 0, 0.5);
   background-image: url(../assets/handshake.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: white;
+  background-blend-mode: overlay;
   /* 
   background-blend-mode: overlay;
   background: rgba(30, 30, 30,0.7); */
@@ -259,9 +271,12 @@ input[type="text"] {
   padding: 19px 20px;
   outline: none;
   border: none;
-  box-shadow: none;
 }
-
+input:focus {
+  font-size: 16px;
+  color: white;
+  opacity: 1;
+}
 .input-box .my-btn {
   color: black;
   background-color: white;
@@ -272,24 +287,26 @@ input[type="text"] {
 
 /* Contact section  */
 
-#Contact{
+#Contact {
+  font-family: "Inter", sans-serif;
   height: 100px;
   border-radius: 16px;
-  padding: 32px 150px 32px 150px;
+  padding: 32px 80px;
   background: rgba(13, 19, 33, 0.03);
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-.contact-container{
+.contact-container {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.icons{
+.icons {
   width: 15%;
   display: flex;
   justify-content: space-between;
@@ -297,6 +314,6 @@ input[type="text"] {
 
 /* challenge part */
 
-a{
+a {
   text-decoration: none;
 }
